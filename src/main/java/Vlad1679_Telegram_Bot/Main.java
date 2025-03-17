@@ -10,6 +10,7 @@ public class Main {
         try {
             TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
             botsApi.registerBot(new HelloWorldBot());
+            System.out.println("Бот запущений локально!");
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
